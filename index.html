@@ -7,55 +7,54 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f0f0f0;
-      padding: 50px;
-      direction: rtl;
+      background: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
     }
     h1 {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
     .link {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      margin: 15px auto;
-      padding: 15px;
-      width: 280px;
-      color: white;
       text-decoration: none;
-      border-radius: 10px;
       font-size: 18px;
       font-weight: bold;
-      transition: transform 0.2s;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      transition: 0.3s;
     }
     .link:hover {
-      transform: scale(1.05);
+      opacity: 0.8;
     }
     .facebook { background: #1877F2; }
-    .tiktok { background: #000000; }
     .youtube { background: #FF0000; }
-    img {
-      width: 24px;
-      height: 24px;
-    }
+    .tiktok { background: #000000; }
+    .whatsapp { background: #25D366; }
   </style>
 </head>
 <body>
-  <h1>تابعني على منصاتي</h1>
-
-  <a class="link facebook" href="https://www.facebook.com/share/1ChCrmxFar/" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook Logo"> فيسبوك
-  </a>
-
-  <a class="link tiktok" href="https://tiktok.com/@joker_egypt45" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok Logo"> تيك توك
-  </a>
-
-  <a class="link youtube" href="https://www.youtube.com/@media_Alexandria" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Logo"> يوتيوب
-  </a>
-
+  <h1>🌐 روابط التواصل الخاصة بي</h1>
+  <div class="links">
+    <a class="link facebook" href="https://www.facebook.com/share/1" target="_blank">📘 فيسبوك</a>
+    <a class="link youtube" href="https://www.youtube.com/@media_Alexandria" target="_blank">▶️ يوتيوب</a>
+    <a class="link tiktok" href="https://tiktok.com/@joker_egypt45" target="_blank">🎵 تيك توك</a>
+    <a class="link whatsapp" href="https://wa.me/201220060850" target="_blank">💬 واتساب</a>
+    <!-- برقم دولي صحيح -->
+    <a class="link whatsapp" href="https://wa.me/201220060850" target="_blank">💬 واتساب (دولي)</a>
+    <a class="link whatsapp" href="https://wa.me/+201220060850" target="_blank">💬 واتساب (+20)</a>
+  </div>
 </body>
 </html>
